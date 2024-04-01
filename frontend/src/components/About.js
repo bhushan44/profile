@@ -14,7 +14,7 @@ export default function About() {
               style={{ fontSize: "75px" }}
             ></WorkspacePremiumIcon>
             <h1>experience</h1>
-            <h1> 1+ years </h1>
+            <h1> 0+ years </h1>
             <h1>Frontend Development</h1>
           </div>
           <div className="flex text-lg flex-col justify-center items-center rounded-3xl border-black  border-2 border-solid w-[300px] h-auto p-5">

@@ -8,7 +8,7 @@ export default function Navbar({ id }) {
       <div className="flex  text-3xl gap-2 mr-40 flex-1 justify-around">
         <a href={`#${id.name1}`}>about</a>
         <a href={`#${id.name2}`} smooth={true} offset={-70} duration={500}>
-          experience
+          skills
         </a>
         <a href={`#${id.name3}`} smooth={true} offset={-70} duration={500}>
           projects

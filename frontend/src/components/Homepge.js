@@ -43,9 +43,12 @@ export default function Homepge() {
             >
               Download Resume
             </a>
-            <button className=" w-auto h-auto bg-blue-500 p-2 rounded-lg">
+            <a
+              href={`#${id.name4}`}
+              className=" w-auto h-auto bg-blue-500 p-2 rounded-lg"
+            >
               Contact Info
-            </button>
+            </a>
           </div>
           <div className="flex gap-2">
             {" "}
@@ -62,12 +65,14 @@ export default function Homepge() {
 
       <div></div>
       <div id={id.name1}>
+        <Outlet></Outlet>
         <About></About>
       </div>
 
       <div id={id.name2} className="h-screen">
         <Experience></Experience>
       </div>
+
       <div id={id.name3}>
         <Projects></Projects>
       </div>
