@@ -34,17 +34,17 @@ export default function Contact() {
   };
 
   return (
-    <div className="h-screen flex relative flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center absolute p-5 top-10">
-        <h1 className="text-slate-800">Get in Touch</h1>
-        <h1 className="text-5xl">Contact me</h1>
+    <div className="lg:h-screen lg:flex lg:relative lg:flex-col lg:justify-center lg:items-center">
+      <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:absolute lg:p-5 lg:top-10">
+        <h1 className="lg:text-slate-800">Get in Touch</h1>
+        <h1 className="lg:text-5xl">Contact me</h1>
       </div>
-      <div className="border-2 relative pt-20 border-black flex gap-10 flex-col border-solid rounded-lg w-[400px] h-[400px]">
+      <div className="lg:border-2 lg:relative lg:pt-20 lg:border-black lg:flex lg:gap-10 lg:flex-col lg:border-solid lg:rounded-lg lg:w-[400px] lg:h-[400px]">
         <div className="">
-          <label className="absolute left-10">your name</label>
+          <label className="lg:absolute lg:left-10">your name</label>
           <input
-            className="border-2 absolute left-40 border-black border-solid rounded-md"
-            type="text"
+            className="lg:border-2 lg:absolute lg:left-40 lg:border-black lg:border-solid lg:rounded-md"
+            type="lg:text"
             value={details.name}
             onChange={(e) => {
               setDetails({
@@ -55,9 +55,9 @@ export default function Contact() {
           ></input>
         </div>
         <div>
-          <label className="absolute left-10">your email</label>
+          <label className="lg:absolute lg:left-10">your email</label>
           <input
-            className="border-2 absolute left-40 border-black border-solid rounded-md"
+            className="lg:border-2 lg:absolute lg:left-40 lg: border-black lg:border-solid lg:rounded-md"
             type="email"
             value={details.email}
             onChange={(e) => {
@@ -69,11 +69,11 @@ export default function Contact() {
           ></input>
         </div>
         <div className="">
-          <label className="absolute left-10">your message</label>
+          <label className="lg:absolute lg:left-10">your message</label>
           <textarea
             rows="4"
             cols=""
-            className="border-2 absolute left-40 right-12 border-black border-solid rounded-md"
+            className="lg:border-2 lg:absolute lg:left-40 lg:right-12 lg: border-black lg:border-solid lg:rounded-md"
             type="text"
             value={details.message}
             onChange={(e) => {
@@ -86,7 +86,7 @@ export default function Contact() {
         </div>
         <button
           onClick={sendEmail}
-          className="absolute bg-blue-400 bottom-20 h-auto w-auto p-3 rounded-lg text-white left-40"
+          className="lg:absolute lg:bg-blue-400 lg:bottom-20 lg:h-auto lg:w-auto lg:p-3 lg:rounded-lg lg:text-white lg:left-40"
         >
           submit
         </button>

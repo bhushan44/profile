@@ -19,34 +19,34 @@ export default function Experience() {
   ]);
   return (
     <div>
-      <div className="h-screen flex flex-col  gap-5 justify-center items-center bg-slate-50">
-        <h1 className="text-lg">Explore my</h1>
-        <h1 className="text-6xl mb-20">Skills</h1>
-        <div className=" flex justify-center  gap-10 items-center">
-          <div className="border-2 flex p-5 w-[500px] flex-col justify-center items-center rounded-3xl border-black border-solid">
-            <h1 className="text-3xl p-5">Frontend Development</h1>
-            <ul className="grid  text-lg justify-center items-center  gap-x-32 gap-10 grid-cols-2">
+      <div className="lg:h-screen lg:flex lg:flex-col  lg:gap-5 lg:justify-center lg:items-center lg:bg-slate-50">
+        <h1 className="lg:text-lg">Explore my</h1>
+        <h1 className="lg:text-6xl lg:mb-20">Skills</h1>
+        <div className=" lg:flex lg:justify-center  lg:gap-10 lg:items-center">
+          <div className="lg:border-2 lg:flex lg:p-5 lg:w-[500px] lg:flex-col lg:justify-center lg:items-center lg:rounded-3xl lg:border-black lg:border-solid">
+            <h1 className="lg:text-3xl lg:p-5">Frontendontend Development</h1>
+            <ul className="lg:grid  lg:text-lg lg:justify-center lg:items-center  lg:gap-x-32 lg:gap-10 lg:grid-cols-2">
               {data.map((o) => {
                 return (
                   <li>
                     <VerifiedIcon></VerifiedIcon>
-                    <span className="ml-5">{o}</span>
-                    <p className="ml-11">intermediate</p>
+                    <span className="lg:ml-5">{o}</span>
+                    <p className="lg:ml-11">intermediate</p>
                   </li>
                 );
               })}
             </ul>
           </div>
-          <div className="   p-5 flex flex-col justify-center items-center w-[500px] rounded-3xl border-2 border-black border-solid">
-            <h1 className="text-3xl p-5"> Backend Development</h1>
-            <ul className="grid  justify-center text-lg items-center  gap-x-32 gap-10 grid-cols-2">
+          <div className="   lg:p-5 lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-[500px] lg:rounded-3xl lg:border-2 lg:border-black lg:border-solid">
+            <h1 className="lg:text-3xl lg:p-5"> Backend Development</h1>
+            <ul className="lg:grid  lg:justify-center lg:text-lg lg:items-center  lg:gap-x-32 lg:gap-10 lg:grid-cols-2">
               {data1.map((o) => {
                 return (
                   <>
                     <li>
                       <VerifiedIcon></VerifiedIcon>
-                      <span className="ml-5">{o}</span>
-                      <p className="ml-11">basic</p>
+                      <span className="lg:ml-5">{o}</span>
+                      <p className="lg:ml-11">basic</p>
                     </li>
                   </>
                 );

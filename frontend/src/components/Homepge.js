@@ -25,32 +25,32 @@ export default function Homepge() {
         <Navbar id={id}></Navbar>
       </div>
 
-      <div className="h-[600px] flex justify-center items-center gap-6">
+      <div className="lg:h-[600px] lg:flex lg:justify-center lg:items-center lg:gap-6">
         <img
-          className="w-80 h-80 rounded-3xl"
+          className="lg:w-80 lg:h-80 lg:rounded-3xl"
           src={bhushan}
           alt="bhushan"
         ></img>
-        <div className="flex  gap-3 flex-col justify-center items-center">
-          <p className="text-3xl">Hello,I am</p>
-          <h1 className="text-4xl">NagaBhushan Mandala</h1>
-          <p className="text-3xl">MERN developer</p>
-          <div className="flex text-white gap-3">
+        <div className="lg:flex  lg:gap-3 lg:flex-col lg:justify-center lg:items-center">
+          <p className="lg:text-3xl">Hello,I am</p>
+          <h1 className="lg:text-4xl">NagaBhushan Mandala</h1>
+          <p className="lg:text-3xl">MERN developer</p>
+          <div className="lg:flex lg:text-white lg:gap-3">
             <a
               href={resume}
               download="resume "
-              className="w-auto h-auto bg-blue-500 p-2 rounded-lg"
+              className="lg:w-auto lg:h-auto  lg:bg-blue-500 lg:p-2 lg:rounded-lg"
             >
               Download Resume
             </a>
             <a
               href={`#${id.name4}`}
-              className=" w-auto h-auto bg-blue-500 p-2 rounded-lg"
+              className=" lg:w-auto lg:h-auto lg:bg-blue-500 lg:p-2 lg:rounded-lg"
             >
               Contact Info
             </a>
           </div>
-          <div className="flex gap-2">
+          <div className="lg:flex lg:gap-2">
             {" "}
             <Link to="https://www.linkedin.com/in/nagabhushanrao-mandala-9a7839283/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BX5bIz1bUTJ6EXJ6CQzBkzw%3D%3D">
               <LinkedInIcon style={{ fontSize: "75px" }}></LinkedInIcon>
@@ -69,7 +69,7 @@ export default function Homepge() {
         <About></About>
       </div>
 
-      <div id={id.name2} className="h-screen">
+      <div id={id.name2} className="lg:h-screen">
         <Experience></Experience>
       </div>
 

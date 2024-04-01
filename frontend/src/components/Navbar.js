@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ id }) {
   return (
-    <div className=" text-slate-700 pt-20 flex justify-around ">
-      <h1 className="  text-5xl  flex-1 ml-40 justify-around">bhushan</h1>
-      <div className="flex  text-3xl gap-2 mr-40 flex-1 justify-around">
+    <div className="lg: text-slate-700 lg:pt-20 lg:flex lg:justify-around ">
+      <h1 className="  lg:text-5xl  lg:flex-1 lg:ml-40 lg:justify-around">
+        bhushan
+      </h1>
+      <div className="lg:flex  lg:text-3xl lg:gap-2 lg:mr-40 lg:flex-1 lg:justify-around">
         <a href={`#${id.name1}`}>about</a>
         <a href={`#${id.name2}`} smooth={true} offset={-70} duration={500}>
           skills
