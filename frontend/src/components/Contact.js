@@ -20,7 +20,7 @@ export default function Contact() {
         "service_o7b0blb",
         "template_iq2rtal",
         TempParams,
-        "cpjdXw3jhe4brNk3n"
+        "cpjdXw3jhe4brNk3n",
       )
       .then(
         (response) => {
@@ -28,23 +28,26 @@ export default function Contact() {
         },
         (error) => {
           window.alert("FAILED...");
-        }
+        },
       );
     setDetails({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className="lg:h-screen lg:flex lg:relative lg:flex-col lg:justify-center lg:items-center">
-      <div className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:absolute lg:p-5 lg:top-10">
+    <div
+      style={{ height: "100vh" }}
+      className=" relative z-0 flex  flex-col items-center justify-center gap-5  lg:relative lg:flex lg:h-screen lg:flex-col lg:items-center lg:justify-center"
+    >
+      <div className="   top-10 lg:absolute lg:top-10 lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-5">
         <h1 className="lg:text-slate-800">Get in Touch</h1>
         <h1 className="lg:text-5xl">Contact me</h1>
       </div>
-      <div className="lg:border-2 lg:relative lg:pt-20 lg:border-black lg:flex lg:gap-10 lg:flex-col lg:border-solid lg:rounded-lg lg:w-[400px] lg:h-[400px]">
-        <div className="">
+      <div className="  border-rounded flex h-[400px]  w-[350px] flex-col  gap-10 border-2 border-black p-10 lg:relative lg:flex lg:h-[400px] lg:w-[400px] lg:flex-col lg:gap-10 lg:rounded-lg lg:border-2 lg:border-solid lg:border-black lg:pt-20">
+        <div className=" ">
           <label className="lg:absolute lg:left-10">your name</label>
           <input
-            className="lg:border-2 lg:absolute lg:left-40 lg:border-black lg:border-solid lg:rounded-md"
-            type="lg:text"
+            className=" absolute left-[165px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
+            type="text"
             value={details.name}
             onChange={(e) => {
               setDetails({
@@ -57,7 +60,7 @@ export default function Contact() {
         <div>
           <label className="lg:absolute lg:left-10">your email</label>
           <input
-            className="lg:border-2 lg:absolute lg:left-40 lg: border-black lg:border-solid lg:rounded-md"
+            className=" absolute left-[165px] rounded-sm border-2 border-solid  border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid"
             type="email"
             value={details.email}
             onChange={(e) => {
@@ -73,7 +76,7 @@ export default function Contact() {
           <textarea
             rows="4"
             cols=""
-            className="lg:border-2 lg:absolute lg:left-40 lg:right-12 lg: border-black lg:border-solid lg:rounded-md"
+            className="absolute left-[165px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:right-12 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
             type="text"
             value={details.message}
             onChange={(e) => {
@@ -86,7 +89,7 @@ export default function Contact() {
         </div>
         <button
           onClick={sendEmail}
-          className="lg:absolute lg:bg-blue-400 lg:bottom-20 lg:h-auto lg:w-auto lg:p-3 lg:rounded-lg lg:text-white lg:left-40"
+          className="absolute bottom-[200px] left-[200px] mt-20 flex items-center justify-center rounded-lg bg-blue-500 p-2 lg:absolute lg:bottom-20 lg:left-40 lg:h-auto lg:w-auto lg:rounded-lg lg:bg-blue-400 lg:p-3 lg:text-white"
         >
           submit
         </button>

@@ -16,30 +16,39 @@ export default function Projects() {
     "https://github.com/bhushan44/socialmedia",
   ]);
   return (
-    <div className="h-screen flex flex-col  gap-y-5 justify-center items-center">
-      <h1 className="text-lg">Browse my</h1>
-      <h1 className="text-6xl mb-10"> projects</h1>
+    <div
+      style={{ height: "100vh" }}
+      className=" relative z-0 m-2 flex h-auto w-auto flex-col  items-center justify-center   border-2  border-solid border-black
+     lg:flex lg:h-screen lg:flex-col  lg:items-center lg:justify-center lg:gap-y-5"
+    >
+      <h1 className="lg:text-lg">Browse my</h1>
+      <h1 className="mb-5 lg:mb-10 lg:text-6xl"> projects</h1>
 
-      <div className="flex   gap-x-10 justify-center items-center">
+      <div className=" flex flex-col  items-center  justify-center gap-3 lg:flex lg:flex-row  lg:items-center lg:justify-center lg:gap-x-10">
         {images.map((o, i) => {
           return (
-            <div className="  border-2 w-[300px] h-[400px] border-solid rounded-lg gap-y-4 border-black flex flex-col justify-center items-center">
+            <div
+              className=" flex flex-col items-center justify-center  gap-2 border-2
+               border-black p-2 lg:flex  lg:h-[400px] lg:w-[300px] lg:flex-col
+             lg:items-center lg:justify-center lg:gap-y-4 lg:rounded-lg lg:border-2 
+             lg:border-solid lg:border-black"
+            >
               <img
-                className="w-[250px] h-[250px]  mt-4 rounded-lg"
+                className=" h-[100px] w-[100px] lg:mt-4 lg:h-[250px]  lg:w-[250px] lg:rounded-lg"
                 src={o}
                 alt="bhu"
               ></img>
               <h1 className="text-3xl">project {i + 1}</h1>
-              <div className="flex gap-x-10 mb-5">
+              <div className=" flex gap-2 lg:mb-5 lg:flex lg:gap-x-10">
                 <a
                   href={github[i]}
-                  className="bg-blue-500 rounded-full text-white w-auto p-2"
+                  className=" h-auto w-auto rounded-full bg-blue-500 p-1 lg:w-auto lg:rounded-full lg:bg-blue-500 lg:p-2 lg:text-white"
                 >
                   Github
                 </a>
                 <Link
                   to={url[i]}
-                  className="bg-blue-500 rounded-full text-white w-auto p-2"
+                  className="  h-auto w-auto rounded-full bg-blue-500 p-1 lg:w-auto lg:rounded-full lg:bg-blue-500 lg:p-2 lg:text-white"
                 >
                   Live Demo
                 </Link>

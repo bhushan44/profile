@@ -25,27 +25,30 @@ export default function Homepge() {
         <Navbar id={id}></Navbar>
       </div>
 
-      <div className="lg:h-[600px] lg:flex lg:justify-center lg:items-center lg:gap-6">
+      <div
+        className=" h-600 z-0 m-5 mt-[100px] flex flex-col  p-4 lg:flex lg:h-[600px]
+       lg:flex-row lg:items-center lg:justify-center lg:gap-6"
+      >
         <img
-          className="lg:w-80 lg:h-80 lg:rounded-3xl"
+          className="  flex  h-[300px] w-[400px] items-center justify-center rounded-full lg:h-80 lg:w-80 lg:rounded-3xl"
           src={bhushan}
           alt="bhushan"
         ></img>
-        <div className="lg:flex  lg:gap-3 lg:flex-col lg:justify-center lg:items-center">
+        <div className=" m-4 flex flex-col items-center justify-center  gap-2 lg:flex  lg:flex-col lg:items-center lg:justify-center lg:gap-3">
           <p className="lg:text-3xl">Hello,I am</p>
           <h1 className="lg:text-4xl">NagaBhushan Mandala</h1>
           <p className="lg:text-3xl">MERN developer</p>
-          <div className="lg:flex lg:text-white lg:gap-3">
+          <div className="  lg:flex lg:gap-3 lg:text-white">
             <a
               href={resume}
               download="resume "
-              className="lg:w-auto lg:h-auto  lg:bg-blue-500 lg:p-2 lg:rounded-lg"
+              className="h-auto  w-auto rounded-sm bg-blue-500 p-2 lg:h-auto lg:w-auto  lg:rounded-lg lg:bg-blue-500 lg:p-2"
             >
               Download Resume
             </a>
             <a
               href={`#${id.name4}`}
-              className=" lg:w-auto lg:h-auto lg:bg-blue-500 lg:p-2 lg:rounded-lg"
+              className=" h-auto w-auto rounded-sm bg-blue-500 p-2 lg:h-auto lg:w-auto lg:rounded-lg lg:bg-blue-500 lg:p-2"
             >
               Contact Info
             </a>
@@ -65,7 +68,6 @@ export default function Homepge() {
 
       <div></div>
       <div id={id.name1}>
-        <Outlet></Outlet>
         <About></About>
       </div>
 
