@@ -20,8 +20,8 @@ export default function Experience() {
   return (
     <div>
       <div
-        className="  relative z-0 m-2 flex h-auto w-auto  flex-col items-center 
-         justify-center overscroll-contain   border-2  border-solid border-black
+        className=" relative z-0 m-2 flex h-auto w-auto flex-col  items-center justify-center 
+         overscroll-contain border-2   border-solid  border-black p-5
           lg:flex lg:h-screen lg:flex-col  lg:items-center lg:justify-center lg:gap-5
           "
       >

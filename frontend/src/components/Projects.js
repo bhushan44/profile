@@ -17,7 +17,7 @@ export default function Projects() {
   ]);
   return (
     <div
-      className="  relative z-0 m-2 flex h-auto w-auto flex-col items-center  justify-center overscroll-auto   border-2  border-solid border-black
+      className=" relative z-0 m-2 flex h-auto w-auto flex-col items-center justify-center  overscroll-auto border-2   border-solid  border-black p-5
      lg:flex lg:h-screen lg:flex-col  lg:items-center lg:justify-center lg:gap-y-5"
     >
       <h1 className="lg:text-lg">Browse my</h1>
