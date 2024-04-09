@@ -17,14 +17,13 @@ export default function Projects() {
   ]);
   return (
     <div
-      style={{ height: "100vh" }}
-      className=" relative z-0 m-2 flex h-auto w-auto flex-col  items-center justify-center   border-2  border-solid border-black
+      className="  relative z-0 m-2 flex h-auto w-auto flex-col items-center  justify-center overscroll-auto   border-2  border-solid border-black
      lg:flex lg:h-screen lg:flex-col  lg:items-center lg:justify-center lg:gap-y-5"
     >
       <h1 className="lg:text-lg">Browse my</h1>
       <h1 className="mb-5 lg:mb-10 lg:text-6xl"> projects</h1>
 
-      <div className=" flex flex-col  items-center  justify-center gap-3 lg:flex lg:flex-row  lg:items-center lg:justify-center lg:gap-x-10">
+      <div className="  flex flex-col items-center  justify-center  gap-3 overscroll-auto lg:flex lg:flex-row  lg:items-center lg:justify-center lg:gap-x-10">
         {images.map((o, i) => {
           return (
             <div

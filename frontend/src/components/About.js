@@ -5,9 +5,8 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 export default function About() {
   return (
     <div
-      style={{ height: "100vh" }}
-      className=" relative z-0 m-2 flex h-auto w-auto flex-col items-center  
-      justify-center border-2   border-solid  border-black pt-[100px]
+      className="relative z-0 m-2 flex h-auto w-auto flex-col items-center justify-center overscroll-auto overscroll-x-auto  
+      border-2 border-solid   border-black  p-3 pt-[100px]
         lg:flex lg:h-screen lg:flex-col lg:items-center lg:justify-center lg:gap-5"
     >
       <h1 className="lg:text-lg">Get to know more</h1>

@@ -20,13 +20,13 @@ export default function Homepge() {
     name4: "id4",
   });
   return (
-    <div className="">
+    <div className=" overscroll-auto">
       <div className="">
         <Navbar id={id}></Navbar>
       </div>
 
       <div
-        className=" h-600 z-0 m-5 mt-[100px] flex flex-col  p-4 lg:flex lg:h-[600px]
+        className=" z-0 m-5 mt-[100px] flex h-auto flex-col  p-4 lg:flex lg:h-[600px]
        lg:flex-row lg:items-center lg:justify-center lg:gap-6"
       >
         <img

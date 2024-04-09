@@ -20,9 +20,8 @@ export default function Experience() {
   return (
     <div>
       <div
-        style={{ height: "100vh" }}
-        className=" relative z-0 m-2 flex h-auto w-auto flex-col 
-         items-center justify-center   border-2  border-solid border-black
+        className="  relative z-0 m-2 flex h-auto w-auto  flex-col items-center 
+         justify-center overscroll-contain   border-2  border-solid border-black
           lg:flex lg:h-screen lg:flex-col  lg:items-center lg:justify-center lg:gap-5
           "
       >

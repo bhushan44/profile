@@ -34,10 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <div
-      style={{ height: "100vh" }}
-      className=" relative z-0 flex  flex-col items-center justify-center gap-5  lg:relative lg:flex lg:h-screen lg:flex-col lg:items-center lg:justify-center"
-    >
+    <div className=" relative z-0 flex h-auto flex-col items-center justify-center gap-5  lg:relative lg:flex lg:h-screen lg:flex-col lg:items-center lg:justify-center">
       <div className="   top-10 lg:absolute lg:top-10 lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-5">
         <h1 className="lg:text-slate-800">Get in Touch</h1>
         <h1 className="lg:text-5xl">Contact me</h1>
@@ -89,7 +86,7 @@ export default function Contact() {
         </div>
         <button
           onClick={sendEmail}
-          className="absolute bottom-[200px] left-[200px] mt-20 flex items-center justify-center rounded-lg bg-blue-500 p-2 lg:absolute lg:bottom-20 lg:left-40 lg:h-auto lg:w-auto lg:rounded-lg lg:bg-blue-400 lg:p-3 lg:text-white"
+          className="absolute bottom-[70px] left-[200px] mt-20 flex items-center justify-center rounded-lg bg-blue-500 p-2 lg:absolute lg:bottom-20 lg:left-40 lg:h-auto lg:w-auto lg:rounded-lg lg:bg-blue-400 lg:p-3 lg:text-white"
         >
           submit
         </button>
