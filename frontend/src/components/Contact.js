@@ -43,7 +43,7 @@ export default function Contact() {
         <div className=" ">
           <label className="lg:absolute lg:left-10">your name</label>
           <input
-            className=" absolute left-[165px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
+            className=" absolute left-[160px] w-[150px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
             type="text"
             value={details.name}
             onChange={(e) => {
@@ -57,7 +57,7 @@ export default function Contact() {
         <div>
           <label className="lg:absolute lg:left-10">your email</label>
           <input
-            className=" absolute left-[165px] rounded-sm border-2 border-solid  border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid"
+            className=" absolute left-[165px] w-[150px] rounded-sm border-2 border-solid  border-black lg:absolute lg:left-40 lg:rounded-md lg:border-2 lg:border-solid"
             type="email"
             value={details.email}
             onChange={(e) => {
@@ -73,7 +73,7 @@ export default function Contact() {
           <textarea
             rows="4"
             cols=""
-            className="absolute left-[165px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:right-12 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
+            className=" absolute left-[165px] w-[150px] rounded-sm border-2 border-solid border-black lg:absolute lg:left-40 lg:right-12 lg:rounded-md lg:border-2 lg:border-solid lg:border-black"
             type="text"
             value={details.message}
             onChange={(e) => {
